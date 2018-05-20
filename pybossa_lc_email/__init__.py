@@ -24,8 +24,8 @@ class PyBossaLCEmail(Plugin):
         if not app.config.get('TESTING'):
             out_path = os.path.join(app.root_path, app.template_folder,
                                     'account', 'email')
-            in_path = os.path.join(app.root_path, 'plugins', 'pybossa_lc',
-                                   'templates', 'email')
+            in_path = os.path.join(app.root_path, 'plugins',
+                                   'pybossa_lc_email', 'templates', 'email')
             if not os.path.exists(out_path):
                 os.mkdir(out_path)
             copy_tree(in_path, out_path)

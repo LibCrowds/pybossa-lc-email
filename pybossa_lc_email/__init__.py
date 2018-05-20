@@ -22,9 +22,9 @@ class PyBossaLCEmail(Plugin):
     def replace_email_templates(self):
         """Replace email templates in the current theme."""
         if not app.config.get('TESTING'):
-            out_path = os.path.join('pybossa', app.template_folder, 'account',
+            out_path = os.path.join(app.root, app.template_folder, 'account',
                                     'email')
-            in_path = os.path.join('pybossa', 'plugins', 'pybossa_lc',
+            in_path = os.path.join(app.root, 'plugins', 'pybossa_lc',
                                    'templates', 'email')
             if not os.path.exists(out_path):
                 os.mkdir(out_path)

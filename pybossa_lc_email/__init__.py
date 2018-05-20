@@ -3,6 +3,7 @@
 
 import os
 import json
+from flask.ext.plugins import Plugin
 from flask import current_app as app
 from distutils.dir_util import copy_tree
 

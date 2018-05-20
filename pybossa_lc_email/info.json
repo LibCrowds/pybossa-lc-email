@@ -1,0 +1,10 @@
+
+{
+  "identifier": "pybossa_lc_email",
+  "name": "pybossa-lc-email",
+  "author": "Alexander Mendes",
+  "website": "https://github.com/LibCrowds/pybossa-lc-email",
+  "license": "MIT",
+  "description": "A PYBOSSA plugin for LibCrowds custom email templates.",
+  "version": "0.1.0"
+}
